@@ -23,12 +23,12 @@ public class WordGenerator implements Callable<Integer> {
     }
 
     public String generateWord(){
-        String word = "";
+        StringBuilder word = new StringBuilder();
         for(int i=0;i<target.length();i++){
-            word += (char)('a' + random.nextInt(26));
+            word.append ((char)('a' + random.nextInt(26)));
         }
         attempts++;
-        return word;
+        return word.toString();
     }
 
 }

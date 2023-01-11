@@ -9,10 +9,6 @@ import java.util.concurrent.Future;
 public class Main extends Thread {
     String myWord;
 
-    public Main() {
-        myWord = "world";
-    }
-
     public Main(String str) {
         myWord = str;
     }
